@@ -16,13 +16,27 @@ A dynamic Pokémon display application built with vanilla JavaScript and Bootstr
 
 ## 📋 Setup & Installation
 
-Since this project uses a `.gitignore` to protect API credentials, you must set up your local configuration to run the project.
+To protect my database credentials, I have excluded the config.js file from this repository using a .gitignore. If you would like to run this project locally, please follow these steps:
 
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/GalacticMuva/Day2-Pokedex.git](https://github.com/GalacticMuva/Day2-Pokedex.git)
+2. **Create a configuration file:** In the root directory, create a new file named config.js and add the following code structure:
+* const CONFIG = {
+   * SUPABASE_URL: "YOUR_SUPABASE_URL",
+   * SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_KEY"
 
-  ## 🦖 Featured Pokémon (Ranks 20-11)
+};
+
+## Why is this step necessary?
+
+**Security & Privacy:** My Supabase credentials are sensitive. By using a config.js file and adding it to my .gitignore, I ensure that my private keys are never uploaded to a public repository where others could access my database.
+
+**Local Configuration:** Since this file is intentionally missing from GitHub, you will need to create it locally so the application can successfully connect to the database.
+
+**Professional Standards:** This approach follows industry best practices for managing environment variables and keeping secret keys separate from the source code.
+
+## 🦖 Featured Pokémon (Ranks 20-11)
 This Pokédex showcases 10 of the strongest non-legendary Pokémon, focusing on ranks 20 through 11 as featured on FandomSpot:
 
 20. **[Chandelure](https://www.fandomspot.com/strongest-non-legendary-pokemon/)** - Features an insanely high Special Attack, making it one of the series' strongest Ghost-type attackers.
