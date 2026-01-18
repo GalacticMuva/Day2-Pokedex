@@ -1,0 +1,25 @@
+/* Custom Pokédex */
+body { 
+    background-color: #1a1a1a; 
+    color: white; 
+}
+
+/*  Hover effect  */
+.card { 
+    transition: transform 0.2s; 
+}
+
+.card:hover { 
+    transform: scale(1.05); 
+}
+
+/* Img sozing */
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Spinner text */
+#loadingSpinner p {
+    font-weight: bold;
+}
